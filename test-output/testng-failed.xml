@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumjenkins.seleniumjenkins.Selenium">
+      <class name="TestNg.Assertions">
         <methods>
-          <include name="launchBrowser"/>
+          <include name="HarsdAssertions"/>
+          <include name="softAssertions"/>
         </methods>
-      </class> <!-- seleniumjenkins.seleniumjenkins.Selenium -->
+      </class> <!-- TestNg.Assertions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
