@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('joy') {
+            steps {
+                echo 'Hello joy'
+            }
+        }
+        stage('Jyo') {
+            steps {
+                echo 'Hello Jyo'
+            }
+        }
+        stage('swathi') {
+            steps {
+                echo 'Hello swathi'
+            }
+        }
+        
+       
+    }
+     post
+        {
+           always
+           {
+               emailext body: 'summary', subject: 'sample genkins mail', to: 'jyothitelukula5@gmail.com'
+           }
+        }
+}
